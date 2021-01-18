@@ -5,7 +5,7 @@ function getJSON(data) {
   return JSON.stringify(data, null, 2);
 }
 
-function convertColor(colors) {
+function recursiveConvertColor(colors) {
   const keys = Object.keys(colors);
   const properties = {};
 
@@ -16,12 +16,19 @@ function convertColor(colors) {
         value: colorValue,
       };
     } else {
-      const nestedValues = convertColor(colorValue);
+      const nestedValues = recursiveConvertColor(colorValue);
       properties[key] = nestedValues;
     }
   });
 
   return properties;
+}
+
+function convertColor(colors) {
+  const properties = recursiveConvertColor(colors);
+  return {
+    color: properties,
+  };
 }
 
 function convertSpacing(spacing) {
@@ -34,7 +41,9 @@ function convertSpacing(spacing) {
     };
   });
 
-  return properties;
+  return {
+    spacing: properties,
+  };
 }
 
 function convertBoxShadow(boxShadow) {
@@ -50,7 +59,9 @@ function convertBoxShadow(boxShadow) {
     }
   });
 
-  return properties;
+  return {
+    shadow: properties,
+  };
 }
 
 function convertFontSize(fontSize) {
@@ -63,7 +74,9 @@ function convertFontSize(fontSize) {
     };
   });
 
-  return properties;
+  return {
+    text: properties,
+  };
 }
 
 function convertFontFamily(fontFamily) {
@@ -77,7 +90,9 @@ function convertFontFamily(fontFamily) {
     };
   });
 
-  return properties;
+  return {
+    font: properties,
+  };
 }
 
 function convertLetterSpacing(letterSpacing) {
@@ -90,7 +105,9 @@ function convertLetterSpacing(letterSpacing) {
     };
   });
 
-  return properties;
+  return {
+    tracking: properties,
+  };
 }
 
 function writeTheme() {
@@ -131,29 +148,12 @@ function writeLetterSpacing(properties) {
 function generateProperties() {
   const { colors, spacing, boxShadow, fontSize, fontFamily, letterSpacing } = defaultTheme;
 
-  const colorProperties = {
-    color: convertColor(colors),
-  };
-
-  const spacingProperties = {
-    spacing: convertSpacing(spacing),
-  };
-
-  const shadowProperties = {
-    shadow: convertBoxShadow(boxShadow),
-  };
-
-  const fontSizeProperties = {
-    text: convertFontSize(fontSize),
-  };
-
-  const fontFamilyProperties = {
-    font: convertFontFamily(fontFamily),
-  };
-
-  const letterSpacingProperties = {
-    tracking: convertLetterSpacing(letterSpacing),
-  }
+  const colorProperties = convertColor(colors);
+  const spacingProperties = convertSpacing(spacing);
+  const shadowProperties = convertBoxShadow(boxShadow);
+  const fontSizeProperties = convertFontSize(fontSize);
+  const fontFamilyProperties = convertFontFamily(fontFamily);
+  const letterSpacingProperties = convertLetterSpacing(letterSpacing);
 
   writeColors(colorProperties);
   writeSpacing(spacingProperties);

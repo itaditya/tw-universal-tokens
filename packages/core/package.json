@@ -1,6 +1,6 @@
 {
   "name": "tw-universal-tokens",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "main": "dist/cjs/theme.js",
   "module": "dist/esm/theme.js",
   "files": [
@@ -15,5 +15,9 @@
   "devDependencies": {
     "style-dictionary": "^2.10.2",
     "tailwindcss": "^2.0.2"
-  }
+  },
+  "keywords": ["tailwind", "tokens", "css", "sass", "styles"],
+  "repository": "git@github.com:itaditya/tw-universal-tokens.git",
+  "author": "Aditya Agarwal (@dev__adi)",
+  "homepage": "https://tw-tokens.netlify.app/"
 }

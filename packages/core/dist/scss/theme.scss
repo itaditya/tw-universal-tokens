@@ -100,6 +100,12 @@ $tw-text-6-xl: 3.75rem !default;
 $tw-text-7-xl: 4.5rem !default;
 $tw-text-8-xl: 6rem !default;
 $tw-text-9-xl: 8rem !default;
+$tw-tracking-tighter: -0.05em !default;
+$tw-tracking-tight: -0.025em !default;
+$tw-tracking-normal: 0em !default;
+$tw-tracking-wide: 0.025em !default;
+$tw-tracking-wider: 0.05em !default;
+$tw-tracking-widest: 0.1em !default;
 $tw-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !default;
 $tw-shadow-default: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06) !default;
 $tw-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !default;
@@ -265,6 +271,14 @@ $tokens: (
     '7xl': $tw-text-7-xl,
     '8xl': $tw-text-8-xl,
     '9xl': $tw-text-9-xl
+  ),
+  'tracking': (
+    'tighter': $tw-tracking-tighter,
+    'tight': $tw-tracking-tight,
+    'normal': $tw-tracking-normal,
+    'wide': $tw-tracking-wide,
+    'wider': $tw-tracking-wider,
+    'widest': $tw-tracking-widest
   ),
   'shadow': (
     'sm': $tw-shadow-sm,

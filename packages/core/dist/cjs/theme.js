@@ -1681,6 +1681,98 @@ module.exports = {
       ]
     }
   },
+  "tracking": {
+    "tighter": {
+      "value": "-0.05em",
+      "original": {
+        "value": "-0.05em"
+      },
+      "name": "TrackingTighter",
+      "attributes": {
+        "category": "tracking",
+        "type": "tighter"
+      },
+      "path": [
+        "tracking",
+        "tighter"
+      ]
+    },
+    "tight": {
+      "value": "-0.025em",
+      "original": {
+        "value": "-0.025em"
+      },
+      "name": "TrackingTight",
+      "attributes": {
+        "category": "tracking",
+        "type": "tight"
+      },
+      "path": [
+        "tracking",
+        "tight"
+      ]
+    },
+    "normal": {
+      "value": "0em",
+      "original": {
+        "value": "0em"
+      },
+      "name": "TrackingNormal",
+      "attributes": {
+        "category": "tracking",
+        "type": "normal"
+      },
+      "path": [
+        "tracking",
+        "normal"
+      ]
+    },
+    "wide": {
+      "value": "0.025em",
+      "original": {
+        "value": "0.025em"
+      },
+      "name": "TrackingWide",
+      "attributes": {
+        "category": "tracking",
+        "type": "wide"
+      },
+      "path": [
+        "tracking",
+        "wide"
+      ]
+    },
+    "wider": {
+      "value": "0.05em",
+      "original": {
+        "value": "0.05em"
+      },
+      "name": "TrackingWider",
+      "attributes": {
+        "category": "tracking",
+        "type": "wider"
+      },
+      "path": [
+        "tracking",
+        "wider"
+      ]
+    },
+    "widest": {
+      "value": "0.1em",
+      "original": {
+        "value": "0.1em"
+      },
+      "name": "TrackingWidest",
+      "attributes": {
+        "category": "tracking",
+        "type": "widest"
+      },
+      "path": [
+        "tracking",
+        "widest"
+      ]
+    }
+  },
   "shadow": {
     "sm": {
       "value": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",

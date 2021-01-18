@@ -99,6 +99,12 @@
   --tw-text-7-xl: 4.5rem;
   --tw-text-8-xl: 6rem;
   --tw-text-9-xl: 8rem;
+  --tw-tracking-tighter: -0.05em;
+  --tw-tracking-tight: -0.025em;
+  --tw-tracking-normal: 0em;
+  --tw-tracking-wide: 0.025em;
+  --tw-tracking-wider: 0.05em;
+  --tw-tracking-widest: 0.1em;
   --tw-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --tw-shadow-default: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --tw-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);

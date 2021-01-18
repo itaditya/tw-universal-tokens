@@ -80,6 +80,19 @@ function convertFontFamily(fontFamily) {
   return properties;
 }
 
+function convertLetterSpacing(letterSpacing) {
+  const keys = Object.keys(letterSpacing);
+  const properties = {};
+
+  keys.forEach((key) => {
+    properties[key] = {
+      value: letterSpacing[key],
+    };
+  });
+
+  return properties;
+}
+
 function writeTheme() {
   const jsonData = getJSON(defaultTheme);
   fs.writeFileSync('./properties/theme.json', jsonData, 'utf8');
@@ -110,8 +123,13 @@ function writeFontFamily(properties) {
   fs.writeFileSync('./properties/fontFamily/base.json', jsonData, 'utf8');
 }
 
+function writeLetterSpacing(properties) {
+  const jsonData = getJSON(properties);
+  fs.writeFileSync('./properties/letterSpacing/base.json', jsonData, 'utf8');
+}
+
 function generateProperties() {
-  const { colors, spacing, boxShadow, fontSize, fontFamily } = defaultTheme;
+  const { colors, spacing, boxShadow, fontSize, fontFamily, letterSpacing } = defaultTheme;
 
   const colorProperties = {
     color: convertColor(colors),
@@ -133,11 +151,16 @@ function generateProperties() {
     font: convertFontFamily(fontFamily),
   };
 
+  const letterSpacingProperties = {
+    tracking: convertLetterSpacing(letterSpacing),
+  }
+
   writeColors(colorProperties);
   writeSpacing(spacingProperties);
   writeShadows(shadowProperties);
   writeFontSize(fontSizeProperties);
   writeFontFamily(fontFamilyProperties);
+  writeLetterSpacing(letterSpacingProperties);
 }
 
 module.exports = generateProperties;

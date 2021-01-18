@@ -54,14 +54,28 @@
         }
       ]
     },
-    "scss": {
-      "prefix": "tw",
+    "scss-map": {
       "transformGroup": "scss",
       "buildPath": "dist/scss/",
       "files": [
         {
-          "format": "scss/map-deep",
-          "destination": "theme.scss",
+          "format": "scss/map-flat",
+          "mapName": "tw-tokens",
+          "destination": "_theme_map.scss",
+          "options": {
+            "showFileHeader": false
+          }
+        }
+      ]
+    },
+    "scss-variables": {
+      "transformGroup": "scss",
+      "buildPath": "dist/scss/",
+      "prefix": "tw",
+      "files": [
+        {
+          "format": "scss/variables",
+          "destination": "_theme_variables.scss",
           "options": {
             "showFileHeader": false
           }

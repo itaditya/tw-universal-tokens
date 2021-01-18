@@ -1,6 +1,8 @@
 import React from 'react';
-
 import 'tw-universal-tokens/dist/css/theme.css';
+
+import { PrimaryButton } from './Buttons';
+
 import './styles.css';
 
 const tokensCloud = [
@@ -16,11 +18,14 @@ export default function App() {
     <div className="App">
       <section className="hero-container">
         <div className="hero-details">
-          <h1 className="hero-title">Universal Tokens</h1>
-          <div className="hero-description">
-            <p>Tailwind has a great collection of colors & other design tokens.</p>
-            <p>Now you can use them without adapting utility classes.</p>
+          <div>
+            <h1 className="hero-title">Universal Tokens</h1>
+            <div className="hero-description">
+              <p>Tailwind has a great collection of colors & other design tokens.</p>
+              <p>Now you can use them without adapting utility classes.</p>
+            </div>
           </div>
+          <PrimaryButton />
         </div>
         <div className="tokens-cloud">
           {tokensCloud.map((tokenRow, index) => (

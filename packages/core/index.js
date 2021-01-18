@@ -66,6 +66,20 @@ function convertFontSize(fontSize) {
   return properties;
 }
 
+function convertFontFamily(fontFamily) {
+  const keys = Object.keys(fontFamily);
+  const properties = {};
+
+  keys.forEach((key) => {
+    const value = fontFamily[key].join(', ');
+    properties[key] = {
+      value,
+    };
+  });
+
+  return properties;
+}
+
 function writeTheme() {
   const jsonData = getJSON(defaultTheme);
   fs.writeFileSync('./properties/theme.json', jsonData, 'utf8');
@@ -91,8 +105,13 @@ function writeFontSize(properties) {
   fs.writeFileSync('./properties/fontSize/base.json', jsonData, 'utf8');
 }
 
+function writeFontFamily(properties) {
+  const jsonData = getJSON(properties);
+  fs.writeFileSync('./properties/fontFamily/base.json', jsonData, 'utf8');
+}
+
 function generateProperties() {
-  const { colors, spacing, boxShadow, fontSize } = defaultTheme;
+  const { colors, spacing, boxShadow, fontSize, fontFamily } = defaultTheme;
 
   const colorProperties = {
     color: convertColor(colors),
@@ -110,10 +129,15 @@ function generateProperties() {
     text: convertFontSize(fontSize),
   };
 
+  const fontFamilyProperties = {
+    font: convertFontFamily(fontFamily),
+  };
+
   writeColors(colorProperties);
   writeSpacing(spacingProperties);
   writeShadows(shadowProperties);
   writeFontSize(fontSizeProperties);
+  writeFontFamily(fontFamilyProperties);
 }
 
 module.exports = generateProperties;

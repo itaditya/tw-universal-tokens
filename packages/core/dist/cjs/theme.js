@@ -1437,6 +1437,53 @@ module.exports = {
       }
     }
   },
+  "font": {
+    "sans": {
+      "value": "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "original": {
+        "value": "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+      },
+      "name": "FontSans",
+      "attributes": {
+        "category": "font",
+        "type": "sans"
+      },
+      "path": [
+        "font",
+        "sans"
+      ]
+    },
+    "serif": {
+      "value": "ui-serif, Georgia, Cambria, \"Times New Roman\", Times, serif",
+      "original": {
+        "value": "ui-serif, Georgia, Cambria, \"Times New Roman\", Times, serif"
+      },
+      "name": "FontSerif",
+      "attributes": {
+        "category": "font",
+        "type": "serif"
+      },
+      "path": [
+        "font",
+        "serif"
+      ]
+    },
+    "mono": {
+      "value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+      "original": {
+        "value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace"
+      },
+      "name": "FontMono",
+      "attributes": {
+        "category": "font",
+        "type": "mono"
+      },
+      "path": [
+        "font",
+        "mono"
+      ]
+    }
+  },
   "text": {
     "xs": {
       "value": "0.75rem",

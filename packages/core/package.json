@@ -1,7 +1,8 @@
 {
   "name": "tw-universal-tokens",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "dist/cjs/theme.js",
+  "module": "dist/esm/theme.js",
   "files": [
     "dist"
   ],

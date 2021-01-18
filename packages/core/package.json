@@ -1,0 +1,18 @@
+{
+  "name": "tw-universal-tokens",
+  "version": "0.1.0",
+  "main": "dist/cjs/theme.js",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "sd": "style-dictionary",
+    "build": "node run.js && style-dictionary build",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "style-dictionary": "^2.10.2",
+    "tailwindcss": "^2.0.2"
+  }
+}

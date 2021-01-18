@@ -1,0 +1,72 @@
+{
+  "source": ["properties/**/*.json"],
+  "platforms": {
+    "css": {
+      "prefix": "tw",
+      "transformGroup": "css",
+      "buildPath": "dist/css/",
+      "files": [
+        {
+          "format": "css/variables",
+          "destination": "theme.css",
+          "options": {
+            "showFileHeader": false
+          }
+        }
+      ]
+    },
+    "esm": {
+      "transformGroup": "js",
+      "buildPath": "dist/esm/",
+      "files": [
+        {
+          "format": "javascript/es6",
+          "destination": "theme.js",
+          "options": {
+            "showFileHeader": false
+          }
+        }
+      ]
+    },
+    "cjs": {
+      "transformGroup": "js",
+      "buildPath": "dist/cjs/",
+      "files": [
+        {
+          "format": "javascript/module",
+          "destination": "theme.js",
+          "options": {
+            "showFileHeader": false
+          }
+        }
+      ]
+    },
+    "json": {
+      "transformGroup": "js",
+      "buildPath": "dist/json/",
+      "files": [
+        {
+          "format": "json/nested",
+          "destination": "theme.json",
+          "options": {
+            "showFileHeader": false
+          }
+        }
+      ]
+    },
+    "scss": {
+      "prefix": "tw",
+      "transformGroup": "scss",
+      "buildPath": "dist/scss/",
+      "files": [
+        {
+          "format": "scss/map-deep",
+          "destination": "theme.scss",
+          "options": {
+            "showFileHeader": false
+          }
+        }
+      ]
+    }
+  }
+}

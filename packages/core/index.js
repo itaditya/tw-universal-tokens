@@ -53,6 +53,19 @@ function convertBoxShadow(boxShadow) {
   return properties;
 }
 
+function convertFontSize(fontSize) {
+  const keys = Object.keys(fontSize);
+  const properties = {};
+
+  keys.forEach((key) => {
+    properties[key] = {
+      value: fontSize[key][0],
+    };
+  });
+
+  return properties;
+}
+
 function writeTheme() {
   const jsonData = getJSON(defaultTheme);
   fs.writeFileSync('./properties/theme.json', jsonData, 'utf8');
@@ -73,8 +86,13 @@ function writeShadows(properties) {
   fs.writeFileSync('./properties/shadow/base.json', jsonData, 'utf8');
 }
 
+function writeFontSize(properties) {
+  const jsonData = getJSON(properties);
+  fs.writeFileSync('./properties/fontSize/base.json', jsonData, 'utf8');
+}
+
 function generateProperties() {
-  const { colors, spacing, boxShadow } = defaultTheme;
+  const { colors, spacing, boxShadow, fontSize } = defaultTheme;
 
   const colorProperties = {
     color: convertColor(colors),
@@ -88,9 +106,14 @@ function generateProperties() {
     shadow: convertBoxShadow(boxShadow),
   };
 
+  const fontSizeProperties = {
+    text: convertFontSize(fontSize),
+  };
+
   writeColors(colorProperties);
   writeSpacing(spacingProperties);
   writeShadows(shadowProperties);
+  writeFontSize(fontSizeProperties);
 }
 
 module.exports = generateProperties;

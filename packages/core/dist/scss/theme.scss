@@ -84,6 +84,19 @@ $tw-color-pink-600: #db2777 !default;
 $tw-color-pink-700: #be185d !default;
 $tw-color-pink-800: #9d174d !default;
 $tw-color-pink-900: #831843 !default;
+$tw-text-xs: 0.75rem !default;
+$tw-text-sm: 0.875rem !default;
+$tw-text-base: 1rem !default;
+$tw-text-lg: 1.125rem !default;
+$tw-text-xl: 1.25rem !default;
+$tw-text-2-xl: 1.5rem !default;
+$tw-text-3-xl: 1.875rem !default;
+$tw-text-4-xl: 2.25rem !default;
+$tw-text-5-xl: 3rem !default;
+$tw-text-6-xl: 3.75rem !default;
+$tw-text-7-xl: 4.5rem !default;
+$tw-text-8-xl: 6rem !default;
+$tw-text-9-xl: 8rem !default;
 $tw-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !default;
 $tw-shadow-default: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06) !default;
 $tw-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !default;
@@ -229,6 +242,21 @@ $tokens: (
       '800': $tw-color-pink-800,
       '900': $tw-color-pink-900
     )
+  ),
+  'text': (
+    'xs': $tw-text-xs,
+    'sm': $tw-text-sm,
+    'base': $tw-text-base,
+    'lg': $tw-text-lg,
+    'xl': $tw-text-xl,
+    '2xl': $tw-text-2-xl,
+    '3xl': $tw-text-3-xl,
+    '4xl': $tw-text-4-xl,
+    '5xl': $tw-text-5-xl,
+    '6xl': $tw-text-6-xl,
+    '7xl': $tw-text-7-xl,
+    '8xl': $tw-text-8-xl,
+    '9xl': $tw-text-9-xl
   ),
   'shadow': (
     'sm': $tw-shadow-sm,

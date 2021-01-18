@@ -1437,6 +1437,203 @@ module.exports = {
       }
     }
   },
+  "text": {
+    "xs": {
+      "value": "0.75rem",
+      "original": {
+        "value": "0.75rem"
+      },
+      "name": "TextXs",
+      "attributes": {
+        "category": "text",
+        "type": "xs"
+      },
+      "path": [
+        "text",
+        "xs"
+      ]
+    },
+    "sm": {
+      "value": "0.875rem",
+      "original": {
+        "value": "0.875rem"
+      },
+      "name": "TextSm",
+      "attributes": {
+        "category": "text",
+        "type": "sm"
+      },
+      "path": [
+        "text",
+        "sm"
+      ]
+    },
+    "base": {
+      "value": "1rem",
+      "original": {
+        "value": "1rem"
+      },
+      "name": "TextBase",
+      "attributes": {
+        "category": "text",
+        "type": "base"
+      },
+      "path": [
+        "text",
+        "base"
+      ]
+    },
+    "lg": {
+      "value": "1.125rem",
+      "original": {
+        "value": "1.125rem"
+      },
+      "name": "TextLg",
+      "attributes": {
+        "category": "text",
+        "type": "lg"
+      },
+      "path": [
+        "text",
+        "lg"
+      ]
+    },
+    "xl": {
+      "value": "1.25rem",
+      "original": {
+        "value": "1.25rem"
+      },
+      "name": "TextXl",
+      "attributes": {
+        "category": "text",
+        "type": "xl"
+      },
+      "path": [
+        "text",
+        "xl"
+      ]
+    },
+    "2xl": {
+      "value": "1.5rem",
+      "original": {
+        "value": "1.5rem"
+      },
+      "name": "Text2Xl",
+      "attributes": {
+        "category": "text",
+        "type": "2xl"
+      },
+      "path": [
+        "text",
+        "2xl"
+      ]
+    },
+    "3xl": {
+      "value": "1.875rem",
+      "original": {
+        "value": "1.875rem"
+      },
+      "name": "Text3Xl",
+      "attributes": {
+        "category": "text",
+        "type": "3xl"
+      },
+      "path": [
+        "text",
+        "3xl"
+      ]
+    },
+    "4xl": {
+      "value": "2.25rem",
+      "original": {
+        "value": "2.25rem"
+      },
+      "name": "Text4Xl",
+      "attributes": {
+        "category": "text",
+        "type": "4xl"
+      },
+      "path": [
+        "text",
+        "4xl"
+      ]
+    },
+    "5xl": {
+      "value": "3rem",
+      "original": {
+        "value": "3rem"
+      },
+      "name": "Text5Xl",
+      "attributes": {
+        "category": "text",
+        "type": "5xl"
+      },
+      "path": [
+        "text",
+        "5xl"
+      ]
+    },
+    "6xl": {
+      "value": "3.75rem",
+      "original": {
+        "value": "3.75rem"
+      },
+      "name": "Text6Xl",
+      "attributes": {
+        "category": "text",
+        "type": "6xl"
+      },
+      "path": [
+        "text",
+        "6xl"
+      ]
+    },
+    "7xl": {
+      "value": "4.5rem",
+      "original": {
+        "value": "4.5rem"
+      },
+      "name": "Text7Xl",
+      "attributes": {
+        "category": "text",
+        "type": "7xl"
+      },
+      "path": [
+        "text",
+        "7xl"
+      ]
+    },
+    "8xl": {
+      "value": "6rem",
+      "original": {
+        "value": "6rem"
+      },
+      "name": "Text8Xl",
+      "attributes": {
+        "category": "text",
+        "type": "8xl"
+      },
+      "path": [
+        "text",
+        "8xl"
+      ]
+    },
+    "9xl": {
+      "value": "8rem",
+      "original": {
+        "value": "8rem"
+      },
+      "name": "Text9Xl",
+      "attributes": {
+        "category": "text",
+        "type": "9xl"
+      },
+      "path": [
+        "text",
+        "9xl"
+      ]
+    }
+  },
   "shadow": {
     "sm": {
       "value": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",

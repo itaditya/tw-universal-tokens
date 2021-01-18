@@ -1,4 +1,141 @@
 module.exports = {
+  "rounded": {
+    "none": {
+      "value": "0px",
+      "original": {
+        "value": "0px"
+      },
+      "name": "RoundedNone",
+      "attributes": {
+        "category": "rounded",
+        "type": "none"
+      },
+      "path": [
+        "rounded",
+        "none"
+      ]
+    },
+    "sm": {
+      "value": "0.125rem",
+      "original": {
+        "value": "0.125rem"
+      },
+      "name": "RoundedSm",
+      "attributes": {
+        "category": "rounded",
+        "type": "sm"
+      },
+      "path": [
+        "rounded",
+        "sm"
+      ]
+    },
+    "DEFAULT": {
+      "value": "0.25rem",
+      "original": {
+        "value": "0.25rem"
+      },
+      "name": "RoundedDefault",
+      "attributes": {
+        "category": "rounded",
+        "type": "DEFAULT"
+      },
+      "path": [
+        "rounded",
+        "DEFAULT"
+      ]
+    },
+    "md": {
+      "value": "0.375rem",
+      "original": {
+        "value": "0.375rem"
+      },
+      "name": "RoundedMd",
+      "attributes": {
+        "category": "rounded",
+        "type": "md"
+      },
+      "path": [
+        "rounded",
+        "md"
+      ]
+    },
+    "lg": {
+      "value": "0.5rem",
+      "original": {
+        "value": "0.5rem"
+      },
+      "name": "RoundedLg",
+      "attributes": {
+        "category": "rounded",
+        "type": "lg"
+      },
+      "path": [
+        "rounded",
+        "lg"
+      ]
+    },
+    "xl": {
+      "value": "0.75rem",
+      "original": {
+        "value": "0.75rem"
+      },
+      "name": "RoundedXl",
+      "attributes": {
+        "category": "rounded",
+        "type": "xl"
+      },
+      "path": [
+        "rounded",
+        "xl"
+      ]
+    },
+    "2xl": {
+      "value": "1rem",
+      "original": {
+        "value": "1rem"
+      },
+      "name": "Rounded2Xl",
+      "attributes": {
+        "category": "rounded",
+        "type": "2xl"
+      },
+      "path": [
+        "rounded",
+        "2xl"
+      ]
+    },
+    "3xl": {
+      "value": "1.5rem",
+      "original": {
+        "value": "1.5rem"
+      },
+      "name": "Rounded3Xl",
+      "attributes": {
+        "category": "rounded",
+        "type": "3xl"
+      },
+      "path": [
+        "rounded",
+        "3xl"
+      ]
+    },
+    "full": {
+      "value": "9999px",
+      "original": {
+        "value": "9999px"
+      },
+      "name": "RoundedFull",
+      "attributes": {
+        "category": "rounded",
+        "type": "full"
+      },
+      "path": [
+        "rounded",
+        "full"
+      ]
+    }
+  },
   "color": {
     "transparent": {
       "value": "#000000",
@@ -1770,6 +1907,218 @@ module.exports = {
       "path": [
         "tracking",
         "widest"
+      ]
+    }
+  },
+  "leading": {
+    "3": {
+      "value": ".75rem",
+      "original": {
+        "value": ".75rem"
+      },
+      "name": "Leading3",
+      "attributes": {
+        "category": "leading",
+        "type": "3"
+      },
+      "path": [
+        "leading",
+        "3"
+      ]
+    },
+    "4": {
+      "value": "1rem",
+      "original": {
+        "value": "1rem"
+      },
+      "name": "Leading4",
+      "attributes": {
+        "category": "leading",
+        "type": "4"
+      },
+      "path": [
+        "leading",
+        "4"
+      ]
+    },
+    "5": {
+      "value": "1.25rem",
+      "original": {
+        "value": "1.25rem"
+      },
+      "name": "Leading5",
+      "attributes": {
+        "category": "leading",
+        "type": "5"
+      },
+      "path": [
+        "leading",
+        "5"
+      ]
+    },
+    "6": {
+      "value": "1.5rem",
+      "original": {
+        "value": "1.5rem"
+      },
+      "name": "Leading6",
+      "attributes": {
+        "category": "leading",
+        "type": "6"
+      },
+      "path": [
+        "leading",
+        "6"
+      ]
+    },
+    "7": {
+      "value": "1.75rem",
+      "original": {
+        "value": "1.75rem"
+      },
+      "name": "Leading7",
+      "attributes": {
+        "category": "leading",
+        "type": "7"
+      },
+      "path": [
+        "leading",
+        "7"
+      ]
+    },
+    "8": {
+      "value": "2rem",
+      "original": {
+        "value": "2rem"
+      },
+      "name": "Leading8",
+      "attributes": {
+        "category": "leading",
+        "type": "8"
+      },
+      "path": [
+        "leading",
+        "8"
+      ]
+    },
+    "9": {
+      "value": "2.25rem",
+      "original": {
+        "value": "2.25rem"
+      },
+      "name": "Leading9",
+      "attributes": {
+        "category": "leading",
+        "type": "9"
+      },
+      "path": [
+        "leading",
+        "9"
+      ]
+    },
+    "10": {
+      "value": "2.5rem",
+      "original": {
+        "value": "2.5rem"
+      },
+      "name": "Leading10",
+      "attributes": {
+        "category": "leading",
+        "type": "10"
+      },
+      "path": [
+        "leading",
+        "10"
+      ]
+    },
+    "none": {
+      "value": "1",
+      "original": {
+        "value": "1"
+      },
+      "name": "LeadingNone",
+      "attributes": {
+        "category": "leading",
+        "type": "none"
+      },
+      "path": [
+        "leading",
+        "none"
+      ]
+    },
+    "tight": {
+      "value": "1.25",
+      "original": {
+        "value": "1.25"
+      },
+      "name": "LeadingTight",
+      "attributes": {
+        "category": "leading",
+        "type": "tight"
+      },
+      "path": [
+        "leading",
+        "tight"
+      ]
+    },
+    "snug": {
+      "value": "1.375",
+      "original": {
+        "value": "1.375"
+      },
+      "name": "LeadingSnug",
+      "attributes": {
+        "category": "leading",
+        "type": "snug"
+      },
+      "path": [
+        "leading",
+        "snug"
+      ]
+    },
+    "normal": {
+      "value": "1.5",
+      "original": {
+        "value": "1.5"
+      },
+      "name": "LeadingNormal",
+      "attributes": {
+        "category": "leading",
+        "type": "normal"
+      },
+      "path": [
+        "leading",
+        "normal"
+      ]
+    },
+    "relaxed": {
+      "value": "1.625",
+      "original": {
+        "value": "1.625"
+      },
+      "name": "LeadingRelaxed",
+      "attributes": {
+        "category": "leading",
+        "type": "relaxed"
+      },
+      "path": [
+        "leading",
+        "relaxed"
+      ]
+    },
+    "loose": {
+      "value": "2",
+      "original": {
+        "value": "2"
+      },
+      "name": "LeadingLoose",
+      "attributes": {
+        "category": "leading",
+        "type": "loose"
+      },
+      "path": [
+        "leading",
+        "loose"
       ]
     }
   },

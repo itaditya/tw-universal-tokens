@@ -110,6 +110,36 @@ function convertLetterSpacing(letterSpacing) {
   };
 }
 
+function convertLineHeight(lineHeight) {
+  const keys = Object.keys(lineHeight);
+  const properties = {};
+
+  keys.forEach((key) => {
+    properties[key] = {
+      value: lineHeight[key],
+    };
+  });
+
+  return {
+    leading: properties,
+  };
+}
+
+function convertBorderRadius(borderRadius) {
+  const keys = Object.keys(borderRadius);
+  const properties = {};
+
+  keys.forEach((key) => {
+    properties[key] = {
+      value: borderRadius[key],
+    };
+  });
+
+  return {
+    rounded: properties,
+  };
+}
+
 function writeTheme() {
   const jsonData = getJSON(defaultTheme);
   fs.writeFileSync('./properties/theme.json', jsonData, 'utf8');
@@ -145,8 +175,18 @@ function writeLetterSpacing(properties) {
   fs.writeFileSync('./properties/letterSpacing/base.json', jsonData, 'utf8');
 }
 
+function writeLineHeight(properties) {
+  const jsonData = getJSON(properties);
+  fs.writeFileSync('./properties/lineHeight/base.json', jsonData, 'utf8');
+}
+
+function writeBorderRadius(properties) {
+  const jsonData = getJSON(properties);
+  fs.writeFileSync('./properties/borderRadius/base.json', jsonData, 'utf8');
+}
+
 function generateProperties() {
-  const { colors, spacing, boxShadow, fontSize, fontFamily, letterSpacing } = defaultTheme;
+  const { colors, spacing, boxShadow, fontSize, fontFamily, letterSpacing, lineHeight, borderRadius } = defaultTheme;
 
   const colorProperties = convertColor(colors);
   const spacingProperties = convertSpacing(spacing);
@@ -154,6 +194,8 @@ function generateProperties() {
   const fontSizeProperties = convertFontSize(fontSize);
   const fontFamilyProperties = convertFontFamily(fontFamily);
   const letterSpacingProperties = convertLetterSpacing(letterSpacing);
+  const lineHeightProperties = convertLineHeight(lineHeight);
+  const borderRadiusProperties = convertBorderRadius(borderRadius);
 
   writeColors(colorProperties);
   writeSpacing(spacingProperties);
@@ -161,6 +203,8 @@ function generateProperties() {
   writeFontSize(fontSizeProperties);
   writeFontFamily(fontFamilyProperties);
   writeLetterSpacing(letterSpacingProperties);
+  writeLineHeight(lineHeightProperties);
+  writeBorderRadius(borderRadiusProperties);
 }
 
 module.exports = generateProperties;

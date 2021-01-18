@@ -9,6 +9,12 @@ body {
 
 .App {
   font-family: var(--tw-font-sans);
+  background: linear-gradient(
+    90deg,
+    var(--tw-color-purple-400),
+    var(--tw-color-purple-500),
+    var(--tw-color-purple-600)
+  );
 }
 
 .App ::selection {
@@ -17,7 +23,6 @@ body {
 
 .hero-container {
   min-height: 100vh;
-  background: linear-gradient(90deg, var(--tw-color-purple-400), var(--tw-color-purple-500),  var(--tw-color-purple-600));
   display: grid;
   grid-template-rows: 1fr auto;
 }
@@ -122,4 +127,23 @@ body {
 
 .btn-primary:focus {
   outline: 5px solid var(--tw-color-white);
+}
+
+@media screen and (max-width: 640px) {
+  .hero-title {
+    font-size: var(--tw-text-6-xl);
+    -webkit-text-stroke: 1px var(--tw-color-purple-800);
+  }
+
+  .hero-description {
+    font-size: var(--tw-text-2-xl);
+    max-width: 50ch;
+  }
+
+  .hero-details {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: var(--tw-spacing-10);
+  }
 }

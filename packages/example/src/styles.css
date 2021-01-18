@@ -1,0 +1,105 @@
+html,
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: var(--tw-font-sans);
+}
+
+.App ::selection {
+  background-color: var(--tw-color-purple-300);
+}
+
+.hero-container {
+  min-height: 100vh;
+  background: linear-gradient(90deg, var(--tw-color-purple-400), var(--tw-color-purple-500),  var(--tw-color-purple-600));
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.hero-details {
+  grid-row-start: 2;
+  padding-left: var(--tw-spacing-12);
+  padding-bottom: var(--tw-spacing-12);
+}
+
+.hero-title {
+  font-size: var(--tw-text-8-xl);
+  color: var(--tw-color-gray-100);
+  margin-top: 0;
+  margin-bottom: var(--tw-spacing-8);
+  -webkit-text-stroke: 3px var(--tw-color-purple-800);
+}
+
+.hero-description {
+  font-size: var(--tw-text-4-xl);
+  color: var(--tw-color-purple-900);
+  font-weight: medium;
+  max-width: 50ch;
+}
+
+.hero-description p {
+  margin: 0;
+}
+
+.hero-description p + p {
+  margin-top: var(--tw-spacing-2);
+}
+
+.tokens-cloud {
+  padding: var(--tw-spacing-24) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: var(--tw-font-mono);
+  gap: var(--tw-spacing-6);
+  overflow: hidden;
+}
+
+.tokens-cloud-row {
+  --margin-offset: 0;
+
+  display: flex;
+  gap: var(--tw-spacing-8);
+  margin-right: calc(-1 * var(--margin-offset));
+}
+
+.tokens-cloud-row:nth-child(1) {
+  --margin-offset: var(--tw-spacing-4);
+}
+
+.tokens-cloud-row:nth-child(2) {
+  --margin-offset: var(--tw-spacing-8);
+}
+
+.tokens-cloud-row:nth-child(3) {
+  --margin-offset: var(--tw-spacing-4);
+}
+
+.tokens-cloud-row:nth-child(4) {
+  --margin-offset: var(--tw-spacing-6);
+}
+
+.tokens-cloud-row:nth-child(5) {
+  --margin-offset: var(--tw-spacing-10);
+}
+
+.token {
+  padding: var(--tw-spacing-4) var(--tw-spacing-8);
+  background-color: var(--tw-color-white);
+  white-space: nowrap;
+  min-width: var(--tw-spacing-24);
+  border-radius: var(--tw-rounded-full);
+  box-shadow: var(--tw-shadow-lg);
+  transition: 0.2s ease-out;
+}
+
+.token:hover:not(:empty) {
+  transform: scale(1.05);
+  box-shadow: var(--tw-shadow-2-xl);
+}

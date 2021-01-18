@@ -140,6 +140,21 @@ function convertBorderRadius(borderRadius) {
   };
 }
 
+function convertScreen(screen) {
+  const keys = Object.keys(screen);
+  const properties = {};
+
+  keys.forEach((key) => {
+    properties[key] = {
+      value: screen[key],
+    };
+  });
+
+  return {
+    screen: properties,
+  };
+}
+
 function writeTheme() {
   const jsonData = getJSON(defaultTheme);
   fs.writeFileSync('./properties/theme.json', jsonData, 'utf8');
@@ -185,8 +200,13 @@ function writeBorderRadius(properties) {
   fs.writeFileSync('./properties/borderRadius/base.json', jsonData, 'utf8');
 }
 
+function writeScreen(properties) {
+  const jsonData = getJSON(properties);
+  fs.writeFileSync('./properties/screen/base.json', jsonData, 'utf8');
+}
+
 function generateProperties() {
-  const { colors, spacing, boxShadow, fontSize, fontFamily, letterSpacing, lineHeight, borderRadius } = defaultTheme;
+  const { colors, spacing, boxShadow, fontSize, fontFamily, letterSpacing, lineHeight, borderRadius, screens } = defaultTheme;
 
   const colorProperties = convertColor(colors);
   const spacingProperties = convertSpacing(spacing);
@@ -196,6 +216,7 @@ function generateProperties() {
   const letterSpacingProperties = convertLetterSpacing(letterSpacing);
   const lineHeightProperties = convertLineHeight(lineHeight);
   const borderRadiusProperties = convertBorderRadius(borderRadius);
+  const screenProperties = convertScreen(screens);
 
   writeColors(colorProperties);
   writeSpacing(spacingProperties);
@@ -205,6 +226,7 @@ function generateProperties() {
   writeLetterSpacing(letterSpacingProperties);
   writeLineHeight(lineHeightProperties);
   writeBorderRadius(borderRadiusProperties);
+  writeScreen(screenProperties);
 }
 
 module.exports = generateProperties;

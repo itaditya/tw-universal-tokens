@@ -129,6 +129,11 @@ $tw-leading-snug: 1.375 !default;
 $tw-leading-normal: 1.5 !default;
 $tw-leading-relaxed: 1.625 !default;
 $tw-leading-loose: 2 !default;
+$tw-screen-sm: 640px !default;
+$tw-screen-md: 768px !default;
+$tw-screen-lg: 1024px !default;
+$tw-screen-xl: 1280px !default;
+$tw-screen-2-xl: 1536px !default;
 $tw-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !default;
 $tw-shadow-default: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06) !default;
 $tw-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !default;
@@ -329,6 +334,13 @@ $tokens: (
     'normal': $tw-leading-normal,
     'relaxed': $tw-leading-relaxed,
     'loose': $tw-leading-loose
+  ),
+  'screen': (
+    'sm': $tw-screen-sm,
+    'md': $tw-screen-md,
+    'lg': $tw-screen-lg,
+    'xl': $tw-screen-xl,
+    '2xl': $tw-screen-2-xl
   ),
   'shadow': (
     'sm': $tw-shadow-sm,

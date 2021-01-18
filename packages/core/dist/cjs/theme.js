@@ -2122,6 +2122,83 @@ module.exports = {
       ]
     }
   },
+  "screen": {
+    "sm": {
+      "value": "640px",
+      "original": {
+        "value": "640px"
+      },
+      "name": "ScreenSm",
+      "attributes": {
+        "category": "screen",
+        "type": "sm"
+      },
+      "path": [
+        "screen",
+        "sm"
+      ]
+    },
+    "md": {
+      "value": "768px",
+      "original": {
+        "value": "768px"
+      },
+      "name": "ScreenMd",
+      "attributes": {
+        "category": "screen",
+        "type": "md"
+      },
+      "path": [
+        "screen",
+        "md"
+      ]
+    },
+    "lg": {
+      "value": "1024px",
+      "original": {
+        "value": "1024px"
+      },
+      "name": "ScreenLg",
+      "attributes": {
+        "category": "screen",
+        "type": "lg"
+      },
+      "path": [
+        "screen",
+        "lg"
+      ]
+    },
+    "xl": {
+      "value": "1280px",
+      "original": {
+        "value": "1280px"
+      },
+      "name": "ScreenXl",
+      "attributes": {
+        "category": "screen",
+        "type": "xl"
+      },
+      "path": [
+        "screen",
+        "xl"
+      ]
+    },
+    "2xl": {
+      "value": "1536px",
+      "original": {
+        "value": "1536px"
+      },
+      "name": "Screen2Xl",
+      "attributes": {
+        "category": "screen",
+        "type": "2xl"
+      },
+      "path": [
+        "screen",
+        "2xl"
+      ]
+    }
+  },
   "shadow": {
     "sm": {
       "value": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",

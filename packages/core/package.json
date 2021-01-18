@@ -1,6 +1,6 @@
 {
   "name": "tw-universal-tokens",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "dist/cjs/theme.js",
   "files": [
     "dist"
